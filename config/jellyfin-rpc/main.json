@@ -1,0 +1,17 @@
+{
+  "jellyfin": {
+    "url": "http://192.168.1.252:8096",
+    "api_key": "d869acea0d32451395afc8753602c5f4",
+    "username": "jwj212"
+  },
+  "discord": {
+    "application_id": "1155158772411531404"
+  },
+  "imgur": {
+    "client_id": "222c2b8e5471039"
+  },
+  "images": {
+    "enable_images": true,
+    "imgur_images": true
+ }
+}

@@ -1,0 +1,7 @@
+fzf:
+    executable: fzf
+    opts: []
+    state: true
+
+
+default_provider: animeout
