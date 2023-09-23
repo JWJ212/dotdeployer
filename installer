@@ -139,7 +139,7 @@ install_package() {
             echo -e "\e[1A\e[K${OK} $1 was installed."
         else
             # something is missing, exitting to review log
-            echo -e "\e[1A\e[K${ERROR} $1 failed to install :( , please check the install.log . You may need to install manually! Sorry I have tried :("
+            echo -e "\e[1A\e[K${ERROR} $1 failed to install check the install.log  :("
             exit 1
         fi
     fi
@@ -167,9 +167,9 @@ if ! lspci -k | grep -A 2 -E "(VGA|3D)" | grep -iq nvidia; then
     done
 else
 	# Prompt user for Nvidia installation
-	printf "${YELLOW} NVIDIA GPU Detected. Kindly note that Nvidia-Wayland is still kinda wonky. Kindly check Hyprland Wiki if Issues encountered!\n"
+	printf "${YELLOW} NVIDIA GPU Detected. Only god can help you now.\n"
 	sleep 1
-	printf "${YELLOW} Kindly enable some Nvidia-related stuff in the configs after installation\n"
+	printf "${YELLOW} Remember to enable NVIDIA settings in the config after install, or don't.\n"
 	sleep 2
 	read -n1 -rp "Would you like to install Nvidia Hyprland? (y/n) " NVIDIA
 	echo
