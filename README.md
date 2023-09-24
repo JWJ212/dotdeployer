@@ -54,4 +54,10 @@ Fuck it, I need practice writing documentation in markdown so here we go.
 
 ### Installation instructions!
 Step 1. Don't.
+
 Step 2. Profit.
+
+### Warnings for those who do decide to install it even with every warning not to:
+- This will only work on novideo 1000 series cards and higher 
+- You will have problems with the desktop portal
+- If you are using novideo make sure to read the Hyprland wiki on the topic [Novideo page](https://wiki.hyprland.org/Nvidia/)
