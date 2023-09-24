@@ -78,7 +78,6 @@ bindkey -M visual '^[[P' vi-delete
 
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
-export PATH=$PATH:/home/jwj212/.spicetify
 
 
 # Shell-GPT integration ZSH
