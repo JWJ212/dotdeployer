@@ -23,7 +23,7 @@ Fuck it, I need practice writing documentation in markdown so here we go.
 - Shell: [zsh](https://zsh.sourceforge.io/)
 
 ### Included Programs:
-- `swaybg` and 'swww' for wallpapers
+- `swaybg` and `swww` for wallpapers
 - `swaylock` for a lock screen
 - `mako` don't really know why I chose to try out this notif daemon but its here!
 - `grim`, `slurp`, and `wl-clipboard` for screenshotting
