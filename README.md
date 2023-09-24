@@ -68,7 +68,9 @@ Step 2. Profit.
 <details>
 	<summary>Screenshots</summary>
 	
-!['Image'](https://github.com/JWJ212/dotdeployer/blob/main/screenshots/tmux_nvim_librewolf_btop.png?raw=true)
+!['Desktop screenshot 1'](https://github.com/JWJ212/dotdeployer/blob/main/screenshots/tmux_nvim_librewolf_btop.png?raw=true)
+
+!['Desktop screenshot 2'](https://github.com/JWJ212/dotdeployer/blob/main/screenshots/discord_spotify.png?raw=true)
 
 </details>
 
