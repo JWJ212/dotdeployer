@@ -275,7 +275,7 @@ for PKG1 in foot swaybg swaylock-effects wofi wlogout mako grim slurp wl-clipboa
     fi
 done
 
-for PKG2 in librewolf zsh zsh-you-should-use zsh-autosuggestions starship exa tere bat qt5ct btop jq gvfs gvfs-mtp ffmpegthumbs mpv python-requests pamixer brightnessctl xdg-user-dirs viewnior mpv network-manager-applet cava; do
+for PKG2 in rofi-lbonn-wayland librewolf zsh zsh-you-should-use zsh-autosuggestions starship exa tere bat qt5ct btop jq gvfs gvfs-mtp ffmpegthumbs mpv python-requests pamixer brightnessctl xdg-user-dirs viewnior mpv network-manager-applet cava; do
     install_package  "$PKG2" 2>&1 | tee -a "$LOG"
     if [ $? -ne 0 ]; then
         echo -e "\e[1A\e[K${ERROR} - $PKG2 install had failed, please check the install.log"
@@ -478,7 +478,7 @@ read -n1 -rep "${CAT} Would you like to copy config and wallpaper files? (y,n)" 
 if [[ $CFG =~ ^[Yy]$ ]]; then
 
 # check for existing config folders and backup 
-    for DIR in animdl bless dconf nvim nwg-look ncmpcpp neofetch jellyfin-rpc wireplumber tmux rofi-lbonn-wayland shell zsh mpv mpd btop cava hypr foot mako swaylock waybar wlogout wofi 
+    for DIR in animdl bless dconf nvim nwg-look ncmpcpp neofetch jellyfin-rpc wireplumber tmux rofi shell zsh mpv mpd btop cava hypr foot mako swaylock waybar wlogout wofi 
     do 
         DIRPATH=~/.config/$DIR
         if [ -d "$DIRPATH" ]; then 
@@ -514,7 +514,6 @@ if [[ $CFG =~ ^[Yy]$ ]]; then
     cp -r config/nwg-look ~/.config/ || { echo "Error: Failed to nwg-look cava config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/ncmpcpp ~/.config/ || { echo "Error: Failed to copy ncmpcpp config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/neofetch ~/.config/ || { echo "Error: Failed to copy neofetch config files."; exit 1; } 2>&1 | tee -a "$LOG"
-    cp -r config/jellyfin-rpc ~/.config/ || { echo "Error: Failed to copy jellyfin-rpc config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/wireplumber ~/.config/ || { echo "Error: Failed to copy wireplumber config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/tmux ~/.config/ || { echo "Error: Failed to copy tmux config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/rofi ~/.config/ || { echo "Error: Failed to copy rofi config files."; exit 1; } 2>&1 | tee -a "$LOG"
