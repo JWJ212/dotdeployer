@@ -72,7 +72,6 @@ export _JAVA_AWT_WM_NONREPARENTING=1 # Fix for Java applications in dwm
 
 # Start graphical server on user's current tty if not already running.
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-    exec /home/jwj212/.local/bin/hyprland.sh
+    exec $HOME/.local/bin/hyprland.sh
 fi
 # Switch escape and caps if tty and no passwd required:
-sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/ttymaps.kmap 2>/dev/null
