@@ -63,3 +63,9 @@ Step 2. Profit.
 - This will only work on novideo 1000 series cards and higher 
 - You will have problems with the desktop portal
 - If you are using novideo make sure to read the Hyprland wiki on the topic | [Novideo page](https://wiki.hyprland.org/Nvidia/)
+- Tmux is not going to auto-enable all of the plugins, press CTRL+SPACE and then SHIFT+I to install them
+
+<details>
+	<summary>Screenshots</summary>
+	![A screenshot of the desktop with some applications open](/screenshots/tmux_nvim_librewolf_btop.png)
+</details>
