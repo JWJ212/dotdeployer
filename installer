@@ -478,7 +478,7 @@ read -n1 -rep "${CAT} Would you like to copy config and wallpaper files? (y,n)" 
 if [[ $CFG =~ ^[Yy]$ ]]; then
 
 # check for existing config folders and backup 
-    for DIR in animdl bless dconf nvim nwg-look ncmpcpp neofetch jellyfin-rpc wireplumber tmux rofi shell zsh mpv mpd btop cava hypr foot mako swaylock waybar wlogout wofi 
+    for DIR in animdl bless dconf nvim nwg-look ncmpcpp neofetch jellyfin-rpc wireplumber tmux rofi-lbonn-wayland shell zsh mpv mpd btop cava hypr foot mako swaylock waybar wlogout wofi 
     do 
         DIRPATH=~/.config/$DIR
         if [ -d "$DIRPATH" ]; then 
@@ -530,6 +530,7 @@ if [[ $CFG =~ ^[Yy]$ ]]; then
     mkdir -p ~/.local/
     mkdir -p ~/.local/bin
     cp -r local/hyprland.sh ~/.local/bin/ || { echo "Error: Failed to copy hyprland startup script. Have fun trying to fix that."; exit 1; } 2>&1 | tee -a "$LOG"
+    cp -r local/menu ~/.local/bin/ || { echo "Error: Failed to copy menu script. Have fun trying to fix that."; exit 1; } 2>&1 | tee -a "$LOG"
     mkdir -p ~/Pictures/wallpapers
     cp -r wallpapers ~/Pictures/ && { echo "Copy completed!"; } || { echo "Error: Failed to copy wallpapers."; exit 1; } 2>&1 | tee -a "$LOG"
 
