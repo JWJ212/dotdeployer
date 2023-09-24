@@ -2,6 +2,7 @@
 
 
 This is just a simple script that deploys my dotfiles and some of the deps.
+
 DO NOT USE!
 
 ITS PROBABLY GOING TO BREAK YOUR SYSTEM!
@@ -60,4 +61,4 @@ Step 2. Profit.
 ### Warnings for those who do decide to install it even with every warning not to:
 - This will only work on novideo 1000 series cards and higher 
 - You will have problems with the desktop portal
-- If you are using novideo make sure to read the Hyprland wiki on the topic [Novideo page](https://wiki.hyprland.org/Nvidia/)
+- If you are using novideo make sure to read the Hyprland wiki on the topic | [Novideo page](https://wiki.hyprland.org/Nvidia/)
