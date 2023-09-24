@@ -67,5 +67,5 @@ Step 2. Profit.
 
 <details>
 	<summary>Screenshots</summary>
-	![A screenshot of the desktop with some applications open](/screenshots/tmux_nvim_librewolf_btop.png)
+	![A screenshot of the desktop with some applications open](/screenshots/tmux_nvim_librewolf_btop.png "nuts")
 </details>
