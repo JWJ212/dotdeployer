@@ -1,5 +1,6 @@
-# dotdeployer
-
+<br>
+<h3 align = "center> dotdeployer </h3>
+<br>
 
 This is just a simple script that deploys my dotfiles and some of the deps.
 
