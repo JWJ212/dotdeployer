@@ -477,7 +477,7 @@ read -n1 -rep "${CAT} Would you like to copy config and wallpaper files? (y,n)" 
 if [[ $CFG =~ ^[Yy]$ ]]; then
 
 # check for existing config folders and backup 
-    for DIR in animdl bless dconf nvim nwg-look ncmpcpp neofetch jellyfin-rpc wireplumber tmux rofi shell zsh mpv mpd btop cava hypr foot mako swaylock waybar wlogout wofi 
+    for DIR in animdl dconf nvim nwg-look ncmpcpp neofetch jellyfin-rpc wireplumber tmux rofi shell zsh mpv mpd btop cava hypr foot mako swaylock waybar wlogout wofi 
     do 
         DIRPATH=~/.config/$DIR
         if [ -d "$DIRPATH" ]; then 
@@ -507,7 +507,6 @@ if [[ $CFG =~ ^[Yy]$ ]]; then
     cp -r config/btop ~/.config/ || { echo "Error: Failed to copy btop config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/cava ~/.config/ || { echo "Error: Failed to copy cava config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/animdl ~/.config/ || { echo "Error: Failed to copy animdl config files."; exit 1; } 2>&1 | tee -a "$LOG"
-    cp -r config/bless ~/.config/ || { echo "Error: Failed to copy bless config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/dconf ~/.config/ || { echo "Error: Failed to copy dconf config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/nvim ~/.config/ || { echo "Error: Failed to copy nvim config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/nwg-look ~/.config/ || { echo "Error: Failed to nwg-look cava config files."; exit 1; } 2>&1 | tee -a "$LOG"
