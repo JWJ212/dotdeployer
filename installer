@@ -29,14 +29,15 @@ TERM_WIDTH=$(tput cols)
 MESSAGE="Time to deploy some garbage configs!"
 PAD_LENGTH=$(( ($TERM_WIDTH - ${#MESSAGE}) / 2 ))
 
-# Set the color to green
+# Set the color to purple
 GREN='\033[0;32m'
+PURPL='\033[0;35m'
 NC='\033[0m' # No Color
 
 # Display the message with thicker width and green color
-printf "${GREN}+$(printf '%*s' "$((TERM_WIDTH-1))" '' | tr ' ' -)+${NC}\n"
-printf "${GREN}|%*s${MESSAGE}%*s|${NC}\n" $PAD_LENGTH "" $PAD_LENGTH ""
-printf "${GREN}+$(printf '%*s' "$((TERM_WIDTH-1))" '' | tr ' ' -)+${NC}\n"
+printf "${PURPL}+$(printf '%*s' "$((TERM_WIDTH-1))" '' | tr ' ' -)+${NC}\n"
+printf "${PURPL}|%*s${MESSAGE}%*s|${NC}\n" $PAD_LENGTH "" $PAD_LENGTH ""
+printf "${PURPL}+$(printf '%*s' "$((TERM_WIDTH-1))" '' | tr ' ' -)+${NC}\n"
 
 sleep 2
 
