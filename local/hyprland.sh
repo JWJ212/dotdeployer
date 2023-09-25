@@ -2,7 +2,7 @@
 
 
 
-export USER=jwj212
+export USER=$(whoami)
 [ -z $TERM ] && export TERM=linux
 [ -z $LOGNAME ] && export LOGNAME=$USER
 [ -z $HOME ] && export HOME=/home/$USER
