@@ -19,7 +19,7 @@ Fuck it, I need practice writing documentation in markdown so here we go.
 - Window Manager: [Hyprland](https://github.com/hyprwm/Hyprland)
 - Terminal Emulator: [Foot](https://github.com/r-c-f/foot)
 - Status Bar: [Waybar](https://github.com/Alexays/Waybar)
-- Menu: [Rofi](https://github.com/davatorium/rofi)
+- Menu: [Wofi](https://github.com/uncomfyhalomacro/wofi)
 - Shell: [zsh](https://zsh.sourceforge.io/)
 
 ### Included Programs:
