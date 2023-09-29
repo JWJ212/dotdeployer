@@ -478,7 +478,7 @@ read -n1 -rep "${CAT} Would you like to copy config and wallpaper files? (y,n)" 
 if [[ $CFG =~ ^[Yy]$ ]]; then
 
 # check for existing config folders and backup 
-    for DIR in animdl dconf nvim nwg-look ncmpcpp neofetch jellyfin-rpc wireplumber tmux rofi shell zsh mpv mpd btop cava hypr foot mako swaylock waybar wlogout wofi 
+    for DIR in animdl dconf nvim nwg-look ncmpcpp neofetch jellyfin-rpc wireplumber tmux shell zsh mpv mpd btop cava hypr foot mako swaylock waybar wlogout wofi 
     do 
         DIRPATH=~/.config/$DIR
         if [ -d "$DIRPATH" ]; then 
@@ -515,7 +515,6 @@ if [[ $CFG =~ ^[Yy]$ ]]; then
     cp -r config/neofetch ~/.config/ || { echo "Error: Failed to copy neofetch config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/wireplumber ~/.config/ || { echo "Error: Failed to copy wireplumber config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/tmux ~/.config/ || { echo "Error: Failed to copy tmux config files."; exit 1; } 2>&1 | tee -a "$LOG"
-    cp -r config/rofi ~/.config/ || { echo "Error: Failed to copy rofi config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/shell ~/.config/ || { echo "Error: Failed to copy shell config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/zsh ~/.config/ || { echo "Error: Failed to copy zsh config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/mpv ~/.config/ || { echo "Error: Failed to copy mpv config files."; exit 1; } 2>&1 | tee -a "$LOG"
