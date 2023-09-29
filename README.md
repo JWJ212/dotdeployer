@@ -9,7 +9,6 @@ There are many issues and it is far more worthwhile to use a different more
 robust installer. (or better yet just do it yourself!)
 
 That being said if you do want to try it out, you should at least know how to
-
 download and install it yourself so I will not provide an actual tutorial.
 
 
