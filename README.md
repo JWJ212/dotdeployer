@@ -4,16 +4,17 @@
 
 This is just a simple script that deploys my dotfiles and some of the deps.
 
-DO NOT USE!
+I highly advise not using this script at all.
+There are many issues and it is far more worthwhile to use a different more
 
-ITS PROBABLY GOING TO BREAK YOUR SYSTEM!
+robust installer. (or better yet just do it yourself!)
 
-THIS IS MORE LIKELY THAN NOT, NOT GOING TO WORK FOR YOU!
+That being said if you do want to try it out, you should at least know how to
 
-If you hate yourself though, just clone the repo and run the 
-installer script.
+download and install it yourself so I will not provide an actual tutorial.
 
-Fuck it, I need practice writing documentation in markdown so here we go.
+
+
 
 ### Basic programs:
 - Window Manager: [Hyprland](https://github.com/hyprwm/Hyprland)
