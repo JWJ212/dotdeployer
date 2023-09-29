@@ -6,7 +6,6 @@ This is just a simple script that deploys my dotfiles and some of the deps.
 
 I highly advise not using this script at all.
 There are many issues and it is far more worthwhile to use a different more
-
 robust installer. (or better yet just do it yourself!)
 
 That being said if you do want to try it out, you should at least know how to
