@@ -1,0 +1,23 @@
+#!/bin/bash
+DIR=$HOME/Pictures/wallpapers
+
+# Transition config (type swww img --help for more settings
+FPS=30
+TYPE="simple"
+DURATION=3
+
+# wofi window config (in %)
+WIDTH=20
+HEIGHT=30
+
+SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION"
+
+
+PICS=($(ls ${DIR} | grep -e ".jpg$" -e ".jpeg$" -e ".png$" -e ".gif$"))
+
+
+swww query || swww init
+
+sleep 1
+
+swww img ${DIR}/pain.png $SWWW_PARAMS

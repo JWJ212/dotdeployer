@@ -2,7 +2,7 @@
 
 # WALLPAPERS PATH
 DIR=$HOME/Pictures/wallpapers
-
+setfile=$HOME/.config/hypr/scripts/wallpaperSet
 # Transition config (type swww img --help for more settings
 FPS=30
 TYPE="simple"
@@ -69,9 +69,12 @@ main() {
         swww img ${DIR}/${RANDOM_PIC} $SWWW_PARAMS
         return
     fi
-    
+   
     pic_index=$(echo $choice | cut -d. -f1)
     swww img ${DIR}/${PICS[$pic_index]} $SWWW_PARAMS
+    assign_last=$(echo $choice | cut -d ' ' -f 2)
+    caching=$(find ${DIR}/ -name "*${assign_last}*")
+    echo "LAST=${caching}" > ~/.config/hypr/scripts/swwwcache 
 }
 
 # Check if wofi is already running
