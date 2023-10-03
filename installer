@@ -34,7 +34,7 @@ GREN='\033[0;32m'
 PURPL='\033[0;35m'
 NC='\033[0m' # No Color
 
-# Display the message with thicker width and green color
+# Display the message with thicker width and purple color
 printf "${PURPL}+$(printf '%*s' "$((TERM_WIDTH-1))" '' | tr ' ' -)+${NC}\n"
 printf "${PURPL}|%*s${MESSAGE}%*s|${NC}\n" $PAD_LENGTH "" $PAD_LENGTH ""
 printf "${PURPL}+$(printf '%*s' "$((TERM_WIDTH-1))" '' | tr ' ' -)+${NC}\n"
@@ -306,7 +306,21 @@ sleep 2
 
 #clear screen
 clear
+read -n1 -rep "${CAT} OPTIONAL - Would you like to install animdl, a cli based anime downloader and streamer? (y/n)" inst3
+if [[ $inst3 =~ ^[Yy]$ ]]; then
+  printf "{$NOTE} Installing animdl... \n"
+  for ANIM in animdl-git ; do
+    install_package "$ANIM" 2>&1 | tee -a "$LOG"
+    cp -r config/animdl ~/.config/ || { echo "Error: Failed to copy animdl config files."; exit 1; } 2>&1 | tee -a "$LOG"
+    if [ $? -ne 0 ]; then
+      echo -e "\e[1A\e[K${ERROR} - $ANIM install had failed, please check the install.log"
+      exit 1
+    fi
+    done
 
+else 
+  printf "${NOTE} Animdl will not be installed..\n"
+fi
 #themes and cursors
 read -n1 -rep "${CAT} OPTIONAL - Would you like to install Catppuccin-GTK Mocha Theme and Cursors? (y/n)" inst2
 if [[ $inst2 =~ ^[Yy]$ ]]; then
@@ -506,9 +520,6 @@ if [[ $CFG =~ ^[Yy]$ ]]; then
     cp -r config/foot ~/.config/ || { echo "Error: Failed to copy foot config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/wlogout ~/.config/ || { echo "Error: Failed to copy wlogout config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/btop ~/.config/ || { echo "Error: Failed to copy btop config files."; exit 1; } 2>&1 | tee -a "$LOG"
-    cp -r config/cava ~/.config/ || { echo "Error: Failed to copy cava config files."; exit 1; } 2>&1 | tee -a "$LOG"
-    cp -r config/animdl ~/.config/ || { echo "Error: Failed to copy animdl config files."; exit 1; } 2>&1 | tee -a "$LOG"
-    cp -r config/dconf ~/.config/ || { echo "Error: Failed to copy dconf config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/nvim ~/.config/ || { echo "Error: Failed to copy nvim config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/nwg-look ~/.config/ || { echo "Error: Failed to nwg-look cava config files."; exit 1; } 2>&1 | tee -a "$LOG"
     cp -r config/ncmpcpp ~/.config/ || { echo "Error: Failed to copy ncmpcpp config files."; exit 1; } 2>&1 | tee -a "$LOG"
