@@ -1,6 +1,6 @@
 #!/bin/bash
 DIR=$HOME/Pictures/wallpapers
-
+LAST=$(< ~/.config/hypr/scripts/swwwcache)
 # Transition config (type swww img --help for more settings
 FPS=30
 TYPE="simple"
@@ -20,4 +20,4 @@ swww query || swww init
 
 sleep 1
 
-swww img ${DIR}/pain.png $SWWW_PARAMS
+swww img ${LAST} $SWWW_PARAMS

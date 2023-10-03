@@ -74,7 +74,7 @@ main() {
     swww img ${DIR}/${PICS[$pic_index]} $SWWW_PARAMS
     assign_last=$(echo $choice | cut -d ' ' -f 2)
     caching=$(find ${DIR}/ -name "*${assign_last}*")
-    echo "LAST=${caching}" > ~/.config/hypr/scripts/swwwcache 
+    echo -n "${caching}" > ~/.config/hypr/scripts/swwwcache  
 }
 
 # Check if wofi is already running
