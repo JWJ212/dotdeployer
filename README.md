@@ -32,7 +32,7 @@ download and install it yourself so I will not provide an actual tutorial.
 - `xdg-user-dirs` because i'm not insane
 - `exa` awesome replacement for ls
 - `bat` replacement for cat
-- 'lf' if you need a file manager for some reason
+- `lf` if you need a file manager for some reason
 - `tere` for fun and fast navigation through your filesystem
 - `librewolf` amazing webbrowser, de-mozilla'd firefox
 - `starship` for a nicer looking prompt
